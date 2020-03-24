@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pagination.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="pagination" class="pagination">
+  </div>
+  <script src="pagination.js"></script>
+  <script>
+    // 将搜索条件(对象)传入分页器
+    let searchOptions = { title: "xxxx", email: "xx@xx.xxx" }
+    pagination(2, 100, 20, searchOptions)
+  </script>
+</body>
+
+</html>
