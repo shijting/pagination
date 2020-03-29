@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pagination.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="abc" class="pagination">
+  </div>
+  <button id="search" onclick="search()">搜索</button>
+  <script src="pagination.js"></script>
+  <script>
+    const p = new Pagination("#abc ", { page: 4, pageSize: 20, total: 100 }, { abc: "123", name: "xiaozhang" })
+    function search() {
+      console.log('点击搜索');
+
+      p.withOptions({ abc: "123", name: "xiaozhang" })
+    }
+    console.log("obj", p)
+  </script>
+</body>
+
+</html>
